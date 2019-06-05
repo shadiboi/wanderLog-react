@@ -68,7 +68,7 @@ class EntriesContainer extends Component {
     }
 
     getUserEntries = async () => {
-        const userEntries = await fetch(`${process.env.REACT_APP_BACKEND_ADDRESS}` + '/' + this.props.currentUser._id, {
+        const userEntries = await fetch(`${process.env.REACT_APP_BACKEND_ADDRESS}` + '/entries/' + this.props.currentUser._id, {
             method: 'GET',
             credientials: 'include'
         })
