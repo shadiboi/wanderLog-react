@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.entries div {
+  display: block;
+  margin: auto;
+  padding: 1%;
+}
+.map div{
+  margin-bottom: -1% ;
+}
+a:hover {
+ border-bottom: solid 2px rgb(118, 118, 118);
+}
+
+.allEntries div{
+  display: block;
+  margin: auto;
+  padding: 1%;
+ }
+
+.user-title {
+  margin-bottom: -1%;
+  color: rgb(250, 249, 249);
+  font-size: 250%;
+}
+.nav-link{
+border-bottom: 20%;
+}
+
+.jumbotron {
+  padding: 10%;
+  margin: 0% 8% 0% 8%;
+  margin-top: 5%;
+  opacity: 0.6;
+}
+.jumbotron div {
+  margin: 0% 8% 0% 8%;
+  margin-top: 5%;
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+}
+
+.explore-title {
+  padding: 2%;
+  margin-bottom: -4%;
+  font-size: 250%;
+  color: white;
+}
+
+.authContainer {
+  background-image: url('https://images.unsplash.com/photo-1503942142281-94af0aded523?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=975&q=80');
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+
+.authNav{
+  margin-bottom: -4%;
+}
+
+.authCarousel div{
+  padding: 5%;
+}
+
+.card-group div {
+  background-color: rgba(244, 244, 244, 0.694);
+}
+
+.main-container {
+  background-image: url('https://images.unsplash.com/photo-1529000920031-b8f994d2eb27?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80');
+  background-position: center;
+  background-size: cover;
+ 
+}
+
+
+
+
+
+
+
+
