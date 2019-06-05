@@ -60,7 +60,7 @@ deleteUser = async (user, e) => {
 
 handleLogin = async (formData) => {
     try {
-      const loginResponse = await fetch(`${process.env.MONGODB_URI}` + "/login", {
+      const loginResponse = await fetch("/login", {
         method: "POST",
         body: JSON.stringify(formData),
         credentials: 'include',
