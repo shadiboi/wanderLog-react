@@ -42,9 +42,6 @@ class MapContainer extends Component {
   render() {
 
     const {google} = this.props;
-    console.log(this.props)
-    console.log(this.props, '<<<<<<<<<<propsssssssssssss>>>>>>>>>>>>')
-
     const entriesList = this.props.userEntries.map((entry) => {   
       
      return (
