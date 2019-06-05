@@ -25,7 +25,7 @@ class App extends Component {
 
 
   handleRegister = async (formData) => {
-      const newUserResponse = await fetch(`${process.env.MONGODB_URI}` + "/users", {
+      const newUserResponse = await fetch("http://localhost:9000/users", {
         method: "POST",
         body: JSON.stringify(formData),
         credentials: 'include',
@@ -44,7 +44,7 @@ class App extends Component {
 
 deleteUser = async (user, e) => {    
         try {
-            const deleteUser = await fetch(`${process.env.MONGODB_URI}` + '/users/' + user.currentUser._id, {
+            const deleteUser = await fetch('http://localhost:9000/users/' + user.currentUser._id, {
                 method: 'DELETE',
                 credentials: 'include'
               });
@@ -60,7 +60,7 @@ deleteUser = async (user, e) => {
 
 handleLogin = async (formData) => {
     try {
-      const loginResponse = await fetch("/login", {
+      const loginResponse = await fetch("http://localhost:9000/login", {
         method: "POST",
         body: JSON.stringify(formData),
         credentials: 'include',
@@ -95,7 +95,7 @@ logout = async ()=> {
 
 editUser = async () => {
     try {
-      const editedUser = await fetch(`${process.env.MONGODB_URI}` + '/users/' + this.state.currentUser._id, {
+      const editedUser = await fetch('http://localhost:9000/users/' + this.state.currentUser._id, {
         method: 'PUT',
         credentials: 'include',
         body: JSON.stringify(editedUser),
