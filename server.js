@@ -6,12 +6,13 @@ const cors = require('cors');
 const session = require('express-session');
 const MongoDBStore = require('connect-mongodb-session')(session);
 const path = require('path');
+require('dotenv').config()
 
 
 require('./db/db')
 
 const corsOptions = {
-  origin: 'http://localhost:3000', 
+  origin: process.env.REACT_APP_FRONTEND_ADDRESS, 
   credentials: true, 
   optionsSuccessStatus: 200 
 }

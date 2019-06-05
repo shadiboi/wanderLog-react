@@ -45,7 +45,7 @@ class EntriesContainer extends Component {
     }
 
     getAllEntries = async () => {
-        const allEntries = await fetch('http://localhost:9000/entries', {
+        const allEntries = await fetch(`${process.env.REACT_APP_BACKEND_ADDRESS}` + '/entries', {
             method: 'GET',
             credentials: 'include'
           })
@@ -68,7 +68,7 @@ class EntriesContainer extends Component {
     }
 
     getUserEntries = async () => {
-        const userEntries = await fetch('http://localhost:9000/entries/' + this.props.currentUser._id, {
+        const userEntries = await fetch(`${process.env.REACT_APP_BACKEND_ADDRESS}` + '/' + this.props.currentUser._id, {
             method: 'GET',
             credientials: 'include'
         })
@@ -85,7 +85,7 @@ class EntriesContainer extends Component {
             formData.latitude = this.state.latitude
             formData.longitude = this.state.longitude
             formData.owner = this.props.currentUser
-            const newEntry = await fetch("http://localhost:9000/entries", {
+            const newEntry = await fetch(`${process.env.REACT_APP_BACKEND_ADDRESS}` + "/entries", {
                 method: 'POST',
                 body: JSON.stringify(formData),
                 credentials: 'include',
@@ -109,7 +109,7 @@ class EntriesContainer extends Component {
 
     editEntry = async (entryToEdit)  => {
         try {
-        const editedResponse = await fetch('http://localhost:9000/entries/' + entryToEdit.id, {
+        const editedResponse = await fetch(`${process.env.REACT_APP_BACKEND_ADDRESS}` + '/entries/' + entryToEdit.id, {
             method: 'PUT',
             credentials: 'include',
             body: JSON.stringify(entryToEdit),
@@ -148,7 +148,7 @@ class EntriesContainer extends Component {
 
     deleteEntry = async (entryToEdit) => { 
         try {
-            const deletedEntry = await fetch('http://localhost:9000/entries/' + entryToEdit.id, {
+            const deletedEntry = await fetch(`${process.env.REACT_APP_BACKEND_ADDRESS}` + '/entries/' + entryToEdit.id, {
                 method: 'DELETE',
                 credentials: 'include'
             });
