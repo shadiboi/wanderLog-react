@@ -12,7 +12,7 @@ require('dotenv').config()
 require('./db/db')
 
 const corsOptions = {
-  origin: 'https://wander-log.herokuapp.com/', 
+  origin: process.env.REACT_APP_FRONTEND_ADDRESS, 
   credentials: true, 
   optionsSuccessStatus: 200 
 }
