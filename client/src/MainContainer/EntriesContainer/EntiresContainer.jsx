@@ -101,12 +101,11 @@ class EntriesContainer extends Component {
                 })
             //Allows entries to update in maps/explore after new is create. 
             //Same logic for delete/edit
-            this.getUserEntries();
-            this.props.getAllEntries(this.state.allEntries)
+            await this.getUserEntries();
+            await this.props.getAllEntries(this.state.allEntries)
         }
     }
- 
-
+    
     editEntry = async (entryToEdit)  => {
         try {
         const editedResponse = await fetch(`${process.env.REACT_APP_BACKEND_ADDRESS}` + '/entries/' + entryToEdit.id, {

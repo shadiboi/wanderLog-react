@@ -19,7 +19,7 @@ class User extends Component {
 
   
     getAllUsers = async () => {
-        const allUsers = await fetch('http://localhost:9000/users/all', {
+        const allUsers = await fetch(`${process.env.REACT_APP_BACKEND_ADDRESS}` + '/users/all', {
             credentials: 'include'
           })
           const parsedResponse = await allUsers.json();
@@ -31,7 +31,7 @@ class User extends Component {
     }
 
     getUserEntries = async () => {
-        const userEntries = await fetch('http://localhost:9000/entries/' + this.props.currentUser._id, {
+        const userEntries = await fetch(`${process.env.REACT_APP_BACKEND_ADDRESS}` + this.props.currentUser._id, {
             method: 'GET',
             credientials: 'include'
         })

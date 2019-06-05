@@ -31,7 +31,7 @@ class EditUserModal extends Component {
     }
 
     getUser = async () => {
-        const currentUser = await fetch("http://localhost:9000/users/current", {
+        const currentUser = await fetch(`${process.env.REACT_APP_BACKEND_ADDRESS}` + "/users/current", {
             credentials: 'include'
           })
           const parsedResponse = await currentUser.json();
