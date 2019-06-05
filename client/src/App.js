@@ -76,7 +76,7 @@ handleLogin = async (formData) => {
           currentUser: parsedLoginResponse.data
         })
       } else {
-        alert("Username or Password does not exist")
+        alert("Username or  Password does not exist")
       }
 
     } catch(err){
