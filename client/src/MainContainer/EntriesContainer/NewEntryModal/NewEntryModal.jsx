@@ -44,7 +44,7 @@ getLocation = async () => {
 render() {
 return (
     <div>
-    <Link id="new-entry"style={{marginBottom: '-5%',textDecoration: 'none', fontSize: "25px", letterSpacing: '1px',  color: 'white'}} onClick={this.toggle}>{this.props.buttonLabel}Create New Journal Entry</Link>
+    <Link id="new-entry"style={{marginBottom: '-5%',textDecoration: 'none', fontSize: "20px", letterSpacing: '1px',  color: 'white'}} onClick={this.toggle}>{this.props.buttonLabel}Create New Journal Entry</Link>
     <Modal style={{maxWidth: '50vh'}}  isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
         <ModalHeader toggle={this.toggle}>New Entry</ModalHeader><br></br>
         <ModalBody  >
