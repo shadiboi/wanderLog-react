@@ -11,7 +11,7 @@ class ExploreContainer extends Component {
             <Row>
                 <Col sm='7'>
                     <CardGroup>
-                        <Card class= 'entries-card'>
+                        <Card className= 'entries-card'>
                             <CardImg top width="100%" src={entries.photo} alt="No photo available. Click 'Edit Entry' add" />
                             <h2>{entries.title}</h2>
                             <h6>{entries.date}</h6>
@@ -29,7 +29,7 @@ class ExploreContainer extends Component {
 
         return(
             <div >
-              <h1 class='explore-title'>WanderLog Community</h1>
+              <h1 className='explore-title'>WanderLog Community</h1>
                {allEntries}
             </div>
         )

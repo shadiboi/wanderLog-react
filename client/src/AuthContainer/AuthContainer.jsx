@@ -89,8 +89,8 @@ class AuthContainer extends Component {
             );
           });
         return(
-         <div class='authContainer'>
-            <div class='authNav' >
+         <div className='authContainer'>
+            <div className='authNav' >
              <Navbar style={{margin: 'auto'}} color="faded" light>
                 <NavbarBrand style={{fontSize: '200%'}} href="/" className="mr-auto">Wander Log</NavbarBrand>
                 <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
@@ -110,7 +110,7 @@ class AuthContainer extends Component {
                 <div>
               <h1></h1>
             </div>
-        <div  class='jumbotron'>
+        <div  className='jumbotron'>
                <Jumbotron  >
                         <h1 className="display-4">Welcome to Wander<br></br>Log!</h1>
                         <p className="lead">Your personal online travel journal</p>
@@ -120,7 +120,7 @@ class AuthContainer extends Component {
                         </p>
                 </Jumbotron>
          </div>
-            <div class='authCarousel'>
+            <div className='authCarousel'>
                 <Carousel
                     activeIndex={activeIndex}
                     next={this.next}

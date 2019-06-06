@@ -174,7 +174,7 @@ class EntriesContainer extends Component {
                 <Row>
                     <Col sm='9'>
                         <CardGroup>
-                            <Card class= 'entries-card'>
+                            <Card className= 'entries-card'>
                                 <CardImg top width="100%" src={entry.photo} alt="No photo was uploaded." />
                                 <h2>{entry.title}</h2>
                                 <h6>{entry.date}</h6>

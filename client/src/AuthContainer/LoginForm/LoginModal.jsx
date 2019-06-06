@@ -32,7 +32,7 @@ class LoginModal extends React.Component {
 
   render() {
     return (
-      <div class= 'loginBtn'>
+      <div className= 'loginBtn'>
         <Link style={{textDecoration: 'none', letterSpacing: '2px', color:'white', fontSize: '17px'}}  onClick={this.toggle}>{this.props.buttonLabel}LOGIN</Link>
         <Modal style={{maxWidth: '50vh'}} isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
           <ModalHeader toggle={this.toggle}>Login</ModalHeader>

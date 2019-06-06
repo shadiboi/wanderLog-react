@@ -22,6 +22,8 @@ class MapContainer extends Component {
   }
 
   onMarkerClick = (props, marker, e) =>{
+    console.log(marker, 'makrer<<<<<<<<<<<<<<<<<,')
+
       this.setState({
         selectedPlace: props,
         activeMarker: marker,
@@ -33,7 +35,6 @@ class MapContainer extends Component {
     if (this.state.showingInfoWindow) {
       this.setState({
         showingInfoWindow: false,
-        activeMarker: null
       })
     }
   };

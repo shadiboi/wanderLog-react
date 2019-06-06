@@ -66,10 +66,10 @@ class MainContainer extends Component {
     
     render(){    
         return(
-            <div class='main-container'>
-        <div class='profile-nav'>
+            <div className='main-container'>
+        <div className='profile-nav'>
         <Navbar color="faded" light>
-                <NavbarBrand style={{fontSize: '200%', color: 'white'}} Name="mr-auto">Wander Log</NavbarBrand>
+                <NavbarBrand style={{fontSize: '200%', color: 'white'}} className="mr-auto">Wander Log</NavbarBrand>
                 <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
                     <Collapse isOpen={!this.state.collapsed} navbar>
                         <Nav navbar>
@@ -116,7 +116,7 @@ class MainContainer extends Component {
         <TabPane tabId="1">
         <Row>
             <Col sm="12">
-                <div class='entries'>
+                <div className='entries'>
                     <EntriesContainer getAllEntries={this.getAllEntries} getEntries = {this.getEntries} currentUser = {this.props.currentUser}/>
                 </div>
             <footer>@ 2019 WanderLog - ALL RIGHTS RESERVED</footer>
@@ -124,12 +124,12 @@ class MainContainer extends Component {
         </Row>
         </TabPane>
         <TabPane  tabId="2">
-                <div class='map'>
+                <div className='map'>
                     <MapContainer userEntries= {this.state.userEntries} currentUser = {this.props.currentUser}/>
                 </div>
         </TabPane>
         <TabPane tabId="3">
-                <div class='allEntries'>
+                <div className='allEntries'>
                     <ExploreContainer allEntries = {this.state.allEntries} getAllEntries = {this.getAllEntries} userEntries= {this.state.userEntries}/>     
                 </div>
              <footer>@ 2019 WanderLog - ALL RIGHTS RESERVED</footer>
