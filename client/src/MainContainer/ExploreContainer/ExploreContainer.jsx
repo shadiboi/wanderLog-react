@@ -12,7 +12,7 @@ class ExploreContainer extends Component {
                 <Col sm='7'>
                     <CardGroup>
                         <Card class= 'entries-card'>
-                            <CardImg top width="100%" src={entries.photo} alt="No photo uploaded." />
+                            <CardImg top width="100%" src={entries.photo} alt="No photo available. Click 'Edit Entry' add" />
                             <h2>{entries.title}</h2>
                             <h6>{entries.date}</h6>
                             <CardText>{entries.description}</CardText>
