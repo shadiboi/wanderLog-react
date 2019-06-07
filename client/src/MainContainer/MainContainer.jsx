@@ -119,7 +119,6 @@ class MainContainer extends Component {
                 <div className='entries'>
                     <EntriesContainer getAllEntries={this.getAllEntries} getEntries = {this.getEntries} currentUser = {this.props.currentUser}/>
                 </div>
-            <footer>@ 2019 WanderLog - ALL RIGHTS RESERVED</footer>
             </Col>
         </Row>
         </TabPane>
