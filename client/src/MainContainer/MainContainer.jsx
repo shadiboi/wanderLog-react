@@ -68,7 +68,7 @@ class MainContainer extends Component {
         return(
             <div className='main-container'>
         <div className='profile-nav'>
-        <Navbar color="faded" light>
+        <Navbar color="faded" dark>
                 <NavbarBrand style={{fontSize: '200%', color: 'white'}} className='wl-logo' className="mr-auto">Wander Log</NavbarBrand>
                 <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
                     <Collapse isOpen={!this.state.collapsed} navbar>

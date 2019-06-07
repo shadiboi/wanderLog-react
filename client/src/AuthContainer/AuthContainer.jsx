@@ -91,7 +91,7 @@ class AuthContainer extends Component {
         return(
          <div className='authContainer'>
             <div className='authNav' >
-             <Navbar style={{margin: 'auto'}} color="faded" light>
+             <Navbar style={{margin: 'auto'}} color="faded" dark>
                 <NavbarBrand style={{fontSize: '200%'}} href="/" className='wl-logo' className="mr-auto">Wander Log</NavbarBrand>
                 <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
                     <Collapse isOpen={!this.state.collapsed} navbar>
