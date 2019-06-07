@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 class ExploreContainer extends Component {
 
     render(){
-        let allEntries = this.props.allEntries.filter((entries) => entries.public).map((entries, i)=> {            
+        let allEntries = this.props.allEntries.filter((entries) => entries.public === 'on').map((entries, i)=> {            
             return (
             <div key = {entries._id}>
             <Row>
