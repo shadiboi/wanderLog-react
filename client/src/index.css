@@ -79,7 +79,6 @@ border-bottom: 20%;
   background-color: rgba(244, 244, 244, 0.694);
 }
 
-
 body {
   background-image: url('https://images.unsplash.com/photo-1529000920031-b8f994d2eb27?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80');
   background-position: center;
@@ -92,8 +91,10 @@ body {
 .wl-logo {
   font-family: 'Montserrat Alternates', sans-serif;
 }
-
-
+.navbar-toggler-icon {
+  color: white;
+}
+ 
 
 
 
