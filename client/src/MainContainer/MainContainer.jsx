@@ -77,10 +77,10 @@ class MainContainer extends Component {
                             <EditUserModal  editUser={this.editUser} allUsers = {this.state.allUsers} currentUser = {this.state.currentUser} deleteUser= {this.props.deleteUser}/>
                         </NavItem>
                         <NavItem>
-                            <NavLink  style={{textDecoration: 'none', letterSpacing: '2px', color:'white', fontSize: '17px'}}  href="http://www.google.com/flights" target='_blank'>Fly </NavLink>
+                            <NavLink  style={{margin: 'auto', width: '6vw',textDecoration: 'none', letterSpacing: '2px', color:'white', fontSize: '17px'}}  href="http://www.google.com/flights" target='_blank'>Fly </NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink style={{textDecoration: 'none', letterSpacing: '2px', color:'white', fontSize: '17px'}}  href=""onClick= {this.logout}>Logout</NavLink> 
+                            <NavLink style={{margin: 'auto', width: '6vw',textDecoration: 'none', letterSpacing: '2px', color:'white', fontSize: '17px'}}  href=""onClick= {this.logout}>Logout</NavLink> 
                         </NavItem>
                         </Nav>
                     </Collapse>
