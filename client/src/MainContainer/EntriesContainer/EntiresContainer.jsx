@@ -99,10 +99,16 @@ class EntriesContainer extends Component {
                     userEntries: [...this.state.userEntries, parsedResponse.data],
                     allEntries: [...this.state.allEntries, parsedResponse.data]
                 })
-            //Allows entries to update in maps/explore after new is create. 
-            //Same logic for delete/edit
+            //Allows entries to update in maps/explore after new is create. Same logic for delete/edit
              this.getUserEntries();
              this.props.getAllEntries(this.state.allEntries)
+             if (formData){
+                formData.public = 'off';
+                formData.date = null;
+                formData.title = '';
+                formData.description = '';
+                formData.photo = '';
+            }
         }
     }
     
