@@ -39,8 +39,11 @@ class App extends Component {
             loggedIn: true,
             currentUser: parsedResponse.data
         })
-    }
+      } else {
+        alert("Username or Password already exist")
+      }
   }
+  
 
 deleteUser = async (user, e) => {    
         try {
